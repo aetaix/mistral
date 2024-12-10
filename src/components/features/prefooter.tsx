@@ -3,8 +3,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import { produce } from 'immer';
 
-const numRows = 30
-const numCols = 130;
+const numRows = 20;
+const numCols = 40;
 
 const operations = [
     [0, 1],
@@ -18,7 +18,7 @@ const operations = [
 ];
 
 // Define the colors palette
-const colors = ['#FE0207', '#FE4900', '#FF7000', '#FEA401', '#FECE00', "#fff"];
+const colors = ['#FE0207', '#FE4900', '#FF7000', '#FEA401', '#FECE00'];
 
 // Generate an empty grid (2D array of nulls)
 const generateEmptyGrid = (): (string | null)[][] => {
@@ -143,4 +143,14 @@ const GameOfLife = () => {
     );
 };
 
-export default GameOfLife;
+export default function Prefooter() {
+    return (
+        <section>
+            <h2 className="text-5xl text-center">Build today with Mistral AI</h2>
+            <p className="text-center">Join a community of builder all around the world.</p>
+            <div className="bg-sphere flex justify-center items-end">
+                <GameOfLife />
+            </div>
+        </section>
+    );
+}

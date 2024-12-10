@@ -2,7 +2,7 @@
 import React, { SetStateAction, useState } from 'react';
 import Image from 'next/image';
 import { ChevronDown, ArrowRight } from 'lucide-react';
-import Button from '../common/buttons';
+import { Button } from '../common/buttons';
 
 // Type definitions
 interface MenuItem {
@@ -127,7 +127,7 @@ export default function Header() {
         key={index}
         onMouseEnter={() => handleMenuEnter(item.value || null)}
         onMouseLeave={handleMenuLeave}
-        className="px-4 py-4 flex justify-center gap-2 items-center"
+        className="px-4 py-6 flex justify-center gap-2 items-center"
       >
         {item.label}
         {item.hasChildren && <ChevronDown size={16} />}
@@ -183,7 +183,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 ">
+    <header className="fixed top-0 left-0 w-full z-50">
       <nav className="container relative bg-white/60 backdrop-blur-xl hover:bg-white transition-all shadow-sm border">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
@@ -192,9 +192,10 @@ export default function Header() {
               {menuItems.map(renderMenuItem)}
             </div>
           </div>
-          <div className="flex items-center flex-end">
+          <div className="flex items-center flex-end gap-2">
             {menuLeftItems.map(renderMenuItem)}
-            <Button href="/login" className="py-2 bg-black text-white">La Plateforme</Button>
+            <Button href="/login" variant="outline">Sign In</Button>
+            <Button href="/login">Login</Button>
           </div>
         </div>
 

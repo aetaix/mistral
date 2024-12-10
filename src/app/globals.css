@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +9,20 @@
   --foreground: #080808;
 }
 
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+.bg-hero {
+  background-size: 100% 100%;
+background-position: 0px 0px,0px 0px;
+background-image: radial-gradient(75% 75% at 90% 0%, #FE490045 0%, #FE490000 100%),radial-gradient(75% 75% at 100% 35%, #FEA40130 0%, #FEA40100 100%);
+}
+
+.bg-sphere {
+  height: 350px;
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(75% 100% at 60% 100%, #FFBC00ED 0%, #FF700000 50%),radial-gradient(75% 100% at 33% 100%, #FF700085 1%, #FF700000 50%),radial-gradient(20% 70% at 50% 100%, #FECE00 0%, #ff5500d5 85%, #FF7E0000 100%);
+}
