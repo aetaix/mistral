@@ -3,7 +3,9 @@
 import { Button } from "@/components/common/buttons";
 import { Carousel } from "@/components/features/carousel";
 import GameOfLife from "@/components/features/game-of-life";
+import PostList from "@/components/features/post-list";
 import Prefooter from "@/components/features/prefooter";
+import RollingTitle from "@/components/features/rolling-title";
 import Tabs from "@/components/features/tabs";
 import { Advantages } from "@/components/layouts/home/advantages";
 import { Models } from "@/components/layouts/home/models";
@@ -34,7 +36,10 @@ export default function Home() {
 
       <section>
         <div className="container py-24">
-          <h2 className="text-3xl font-semibold text-center mb-8">Cutting edge technology for</h2>
+          <div className="flex items-center justify-center">
+            <RollingTitle />
+          </div>
+
           <Advantages />
         </div>
       </section>
@@ -52,9 +57,22 @@ export default function Home() {
 
       <section className="py-24">
         <div className="container">
-        <Tabs />
+          <Tabs />
         </div>
- 
+      </section>
+
+      <section className="pb-24">
+        <div className="container grid grid-cols-2">
+          <div>
+            <h2 className="text-4xl font-semibold mb-2">Latest insights</h2>
+            <p className="mb-8">Here from us, our research and life at Mistral AI</p>
+            <Button>All our insights</Button>
+          </div>
+          <div className="">
+            <PostList />
+          </div>
+        </div>
+
       </section>
 
       <Prefooter />

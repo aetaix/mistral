@@ -28,23 +28,75 @@ const tabs = [
     },
     {
         title: 'Tab 2',
+        logo: 'img/clients/ibm.svg',
         content: {
-            title: 'Tab 1 content',
+            title: 'Enhanced data analytics capabilities with Mistral Large',
             results: [
                 {
-                    figure: '100k €',
-                    description: 'Raised'
+                    figure: '500k €',
+                    description: 'approximate cost saving per year'
+                },
+                {
+                    figure: '50h',
+                    description: 'saved in data processing time'
                 }
             ],
             quote: {
-                text: 'This is a quote',
-                author: 'Author',
-                position: 'Position',
-                company: 'Company'
+                text: 'Mistral Large has revolutionized our data analytics processes. The efficiency and accuracy of their AI solutions are unmatched.',
+                author: 'Jane Smith',
+                position: 'Data Scientist',
+                company: 'IBM'
+            }
+        }
+    },
+    {
+        title: 'Tab 3',
+        logo: 'img/clients/zalando.svg',
+        content: {
+            title: 'Improved customer experience with Mistral Large',
+            results: [
+                {
+                    figure: '300k €',
+                    description: 'approximate cost saving per year'
+                },
+                {
+                    figure: '30h',
+                    description: 'saved in customer support time'
+                }
+            ],
+            quote: {
+                text: 'Thanks to Mistral Large, we have significantly improved our customer experience. Their AI solutions have been a game-changer for us.',
+                author: 'John Doe',
+                position: 'Customer Experience Manager',
+                company: 'Zalando'
+            }
+        }
+    },
+    {
+        title: 'Tab 4',
+        logo: 'img/clients/mars.svg',
+        content: {
+            title: 'Optimized supply chain management with Mistral Large',
+            results: [
+                {
+                    figure: '200k €',
+                    description: 'approximate cost saving per year'
+                },
+                {
+                    figure: '40h',
+                    description: 'saved in supply chain management time'
+                }
+            ],
+            quote: {
+                text: 'Mistral Large has been instrumental in optimizing our supply chain management. Their AI tools have helped us streamline our operations.',
+                author: 'Alice Johnson',
+                position: 'Supply Chain Manager',
+                company: 'Mars'
             }
         }
     }
 ]
+
 
 export default function Tabs() {
     const [currentTab, setCurrentTab] = useState(0);
@@ -58,7 +110,7 @@ export default function Tabs() {
                         onClick={() => setCurrentTab(index)}
                         className={`px-4 py-6 flex justify-center gap-2 border-b-4 w-full items-center ${currentTab === index ? 'border-black' : 'border-neutral-200'}`}
                     >
-                        {tab.logo ? <Image src={tab.logo} width="72" height="40" alt={tab.title} /> : tab.title}
+                        {tab.logo ? <Image src={tab.logo} width="90" height="40" alt={tab.title} /> : tab.title}
                     </button>
                 ))}
 

@@ -4,7 +4,7 @@ import Header from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
 
 export const metadata: Metadata = {
-  title: "Models for the next | Mistral",
+  title: "Generating a world of Possible | Mistral AI",
   description: "Discover Mistral model library",
 };
 
