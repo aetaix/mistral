@@ -203,7 +203,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="container relative bg-white/90 backdrop-blur-xl hover:bg-white transition-all shadow-sm border p-4 md:p-0">
+      <nav className="container relative bg-white/90 backdrop-blur-xl hover:bg-white transition-all shadow-sm border p-4 md:p-0 md:px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
             <Link href="/">
@@ -218,7 +218,7 @@ export default function Header() {
             <Button href="/login" variant="outline">Sign In</Button>
             <Button href="/login">Login</Button>
           </div>
-          <button className='size-10 bg-black flex justify-center items-center text-white md:hidden block'>
+          <button className='size-10 bg-black flex justify-center items-center text-white md:hidden'>
           <Menu size={24} />
           </button>
         </div>
