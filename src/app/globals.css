@@ -27,6 +27,13 @@ background-image: radial-gradient(75% 75% at 90% 0%, #FE490045 0%, #FE490000 100
   background-image: radial-gradient(75% 100% at 60% 100%, #FFBC00ED 0%, #FF700000 50%),radial-gradient(75% 100% at 33% 100%, #FF700085 1%, #FF700000 50%),radial-gradient(20% 70% at 50% 100%, #FECE00 0%, #ff5500d5 85%, #FF7E0000 100%);
 }
 
+@media screen and (max-width: 640px) {
+  .bg-sphere {
+    background-image: radial-gradient(75% 100% at 60% 100%, #FFBC00ED 0%, #FF700000 50%),radial-gradient(75% 100% at 33% 100%, #FF700085 1%, #FF700000 50%),radial-gradient(40% 60% at 50% 100%, #FECE00 0%, #ff5500d5 85%, #FF7E0000 100%);
+  }
+  
+}
+
 .bg-models {
   background-size: 100% 100%;
   background-position: 0px 0px,0px 0px;
