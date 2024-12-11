@@ -202,7 +202,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="container relative bg-white/60 backdrop-blur-xl hover:bg-white transition-all shadow-sm border">
+      <nav className="container relative bg-white/90 backdrop-blur-xl hover:bg-white transition-all shadow-sm border">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
             <Image src="/img/mistral-logo.svg" alt="Mistral" width={100} height={100} />
