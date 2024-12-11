@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/common/buttons";
+import { Carousel } from "@/components/features/carousel";
 import GameOfLife from "@/components/features/game-of-life";
 import Prefooter from "@/components/features/prefooter";
 import Tabs from "@/components/features/tabs";
@@ -24,10 +25,10 @@ export default function Home() {
       </section>
 
       <section className="py-10">
-        Carousel
+        <Carousel />
       </section>
 
-      <section>
+      <section className="py-10">
         <Models />
       </section>
 
