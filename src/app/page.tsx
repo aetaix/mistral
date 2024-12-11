@@ -16,9 +16,9 @@ export default function Home() {
       <section className="overflow-hidden relative  flex flex-col  items-center bg-hero pt-20">
         <GameOfLife />
         <div className="container py-12 space-y-6">
-          <h1 className="text-[72px] leading-none">Generating <br /> a world of possible</h1>
+          <h1 className="text-4xl md:text-[72px] leading-none">Generating <br /> a world of possible</h1>
           <p className="text-neutral-600">Mistral AI provides the developer llm and infrastructure to build, scale and secure powerful AI App.</p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button href="/docs">Engage with our latest models</Button>
             <Button href="/docs" variant="outline">Start building AI products</Button>
           </div>
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container px-0 py-24">
+          <div className="container md:px-0 py-24">
             <div className="flex items-center justify-center">
               <h2 className="text-3xl mb-8 font-semibold">Cutting edge technology for developers</h2>
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       <section className="bg-black text-white py-24">
-        <div className="container px-0">
+        <div className="container md:px-0">
           <h2 className="text-xl mb-4 text-orange-500">La Plateforme</h2>
           <p className="text-4xl font-semibold mb-8">Build at the speed of AI</p>
           <Plateform />
@@ -56,13 +56,13 @@ export default function Home() {
       </section>
 
       <section className="py-24">
-        <div className="container px-0">
+        <div className="container md:px-0">
           <Tabs />
         </div>
       </section>
 
       <section className="pb-24">
-        <div className="container px-0 grid grid-cols-2">
+        <div className="container md:px-0 md:grid grid-cols-2">
           <div>
             <h2 className="text-4xl font-semibold mb-2">Latest insights</h2>
             <p className="mb-8">Here from us, our research and life at Mistral AI</p>

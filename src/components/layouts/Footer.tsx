@@ -4,7 +4,7 @@ export function Footer() {
     return (
         <footer className="bg-black text-white py-24">
             <div className="container">
-                <div className="grid grid-cols-4 gap-4">
+                <div className="md:grid grid-cols-4 gap-4">
                     <div>
                         <h3 className="text-neutral-300 mb-8">Models</h3>
                         <ul className="space-y-2 mb-16">
@@ -56,7 +56,7 @@ export function Footer() {
                     <div className="flex gap-2 items-center">
                         <span className="text-sm opacity-50">©{new Date().getFullYear()} Mistral AI</span>
                     </div>
-                    <div className="flex gap-4 items-center justify-end">
+                    <div className="md:flex gap-4 items-center justify-end">
                         <span className="text-sm opacity-50">Privacy Policy</span>
                         <span className="text-sm opacity-50">Terms of Services</span>
                         <span className="text-sm opacity-50">Data agreement</span>

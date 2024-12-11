@@ -57,9 +57,9 @@ const modelsOpen = [
 
 export function Models() {
     return (
-        <div className="container px-0 grid grid-cols-3 divide-x divide-neutral-200 border border-neutral-200 bg-white shadow">
+        <div className="container mx:px-0 grid md:grid-cols-3 divide-x divide-neutral-200 border border-neutral-200 bg-white shadow">
             <div className="p-8 flex flex-col justify-between">
-                <div>
+                <div className="mb-8 md:mb-0">
                     <svg width="32" height="33" className="mb-8" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_57_623)">
                             <path d="M6.4 7.06663H0V13.4666H6.4V7.06663Z" fill="#FEA401" />
@@ -101,7 +101,7 @@ export function Models() {
                 <Button href="/models" className="w-full">Discover La Plateforme</Button>
             </div>
 
-            <div className="pl-4 pb-8">
+            <div className="md:pl-4 pb-8">
                 <header className="bg-black p-4 text-white flex items-center justify-between">
                     <h3 className="text-lg font-semibold">Premier Models</h3>
                     <a href="/models" className="text-white hover:underline">View all</a>
@@ -117,7 +117,7 @@ export function Models() {
 
             </div>
 
-            <div className="pl-4 pb-8">
+            <div className="md:pl-4 pb-8">
                 <header className=" p-4 border flex items-center justify-between">
                     <h3 className="text-lg font-semibold">Open source</h3>
                     <a href="/models" className=" hover:underline">View all</a>

@@ -1,8 +1,9 @@
 "use client";
 import React, { SetStateAction, useState } from 'react';
 import Image from 'next/image';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { ChevronDown, ArrowRight, Menu } from 'lucide-react';
 import { Button } from '../common/buttons';
+import Link from 'next/link';
 
 // Type definitions
 interface MenuItem {
@@ -202,19 +203,24 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="container relative bg-white/90 backdrop-blur-xl hover:bg-white transition-all shadow-sm border">
+      <nav className="container relative bg-white/90 backdrop-blur-xl hover:bg-white transition-all shadow-sm border p-4 md:p-0">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
+            <Link href="/">
             <Image src="/img/mistral-logo.svg" alt="Mistral" width={100} height={100} />
-            <div className="flex items-center">
+            </Link>
+            <div className="hidden md:flex items-center">
               {menuItems.map(renderMenuItem)}
             </div>
           </div>
-          <div className="flex items-center flex-end gap-2">
+          <div className="hidden md:flex items-center flex-end gap-2">
             {menuLeftItems.map(renderMenuItem)}
             <Button href="/login" variant="outline">Sign In</Button>
             <Button href="/login">Login</Button>
           </div>
+          <button className='size-10 bg-black flex justify-center items-center text-white md:hidden block'>
+          <Menu size={24} />
+          </button>
         </div>
 
         {renderSubMenu()}

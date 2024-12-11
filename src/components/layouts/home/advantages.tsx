@@ -21,7 +21,7 @@ const advantages = [
 
 export function Advantages() {
     return (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-4 gap-4">
             {advantages.map((advantage, index) => (
                 <Advantage key={index} {...advantage} />
             ))}

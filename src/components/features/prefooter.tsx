@@ -145,8 +145,8 @@ const GameOfLife = () => {
 
 export default function Prefooter() {
     return (
-        <section>
-            <h2 className="text-5xl text-center">Build today with Mistral AI</h2>
+        <section className='overflow-hidden'>
+            <h2 className="text-3xl md:text-5xl text-center">Build today with Mistral AI</h2>
             <p className="text-center">Join a community of builder all around the world.</p>
             <div className="bg-sphere flex justify-center items-end">
                 <GameOfLife />

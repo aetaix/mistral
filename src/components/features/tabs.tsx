@@ -117,11 +117,11 @@ export default function Tabs() {
             </header>
 
             {tabs.map((tab, index) => (
-                <div key={index} className={`py-14 grid grid-cols-2 gap-8 ${currentTab === index ? '' : 'hidden'}`}>
-                    <div className='flex flex-col justify-between'>
-                        <div>
+                <div key={index} className={`py-14 flex flex-col-reverse md:flex-row gap-8 ${currentTab === index ? '' : 'hidden'}`}>
+                    <div>
+                  
                             <h3 className='text-3xl mb-4 font-semibold'> <span className='text-purple-800'>{tab.content.quote.company}</span> {tab.content.title}</h3>
-                            <ul className="gap-2 flex flex-col">
+                            <ul className="gap-2 flex flex-col mb-8">
                                 {tab.content.results.map((result, index) => (
                                     <li key={index} className="bg-purple-50 p-4 border-l-4 border-purple-900">
                                         <h4 className="text-lg flex gap-2">
@@ -132,7 +132,7 @@ export default function Tabs() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                     
                         <Button className="w-fit" variant="outline">Read more</Button>
                     </div>
                     <div>

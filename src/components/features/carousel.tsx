@@ -12,7 +12,7 @@ const options = {
   arrows: false,
   breakpoints: {
     600: {
-      perPage: 1,
+      perPage: 3,
     },
   },
   autoScroll: {
@@ -32,7 +32,7 @@ export function Carousel() {
 
     <Splide options={options} extensions={{ AutoScroll }} aria-label="My Favorite Images">
       {clients.map((client, index) => (
-        <SplideSlide key={index}>
+        <SplideSlide key={index} className="flex justify-center items-center">
           <Image src={`/img/clients/${client}`} alt={client} width={100} height={100} />
         </SplideSlide>
       ))}

@@ -95,7 +95,7 @@ const GameOfLife = () => {
     return (
         <>
             <div    
-              
+                className='h-44 md:h-fit overflow-hidden'
                 style={{
                     display: 'grid',
                     gridTemplateColumns: `repeat(${numCols}, 12px)`,
