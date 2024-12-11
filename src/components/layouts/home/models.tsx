@@ -111,8 +111,10 @@ export function Models() {
                         <Model key={index} {...model} />
                     ))}
                 </div>
+                <div className="pr-4">
+                    <Button href="/models" className="w-full block mt-8" variant="outline">Get a licence</Button>
+                </div>
 
-                <Button href="/models" className="w-full block mt-8 mr-4" variant="outline">Get a licence</Button>
             </div>
 
             <div className="pl-4 pb-8">
@@ -125,8 +127,9 @@ export function Models() {
                         <Model key={index} {...model} />
                     ))}
                 </div>
-
-                <Button href="/models" className="w-full block mt-8 mr-4" variant="outline">Download today</Button>
+                <div className="pr-4">
+                    <Button href="/models" className="w-full block mt-8 mr-4" variant="outline">Download today</Button>
+                </div>
             </div>
 
         </div>

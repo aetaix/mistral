@@ -78,12 +78,20 @@ const subMenuItems: SubMenuItem[] = [
         ],
       },
       {
-        name: 'AI Infrastructure',
+        name: 'Build & Customize',
         items: [
           { name: 'La Plateforme', href: '#laplateforme' },
-          { name: 'Cloud Services', href: '#cloud' },
+          { name: 'Cloud Deployment', href: '#cloud' },
           { name: 'Compute', href: '#compute' },
           { name: 'Fine Tuning', href: '#fine-tuning' },
+        ],
+      },
+      {
+        name: 'Usage',
+        items: [
+          { name: 'Licences', href: '#licence' },
+          { name: 'Pricing', href: '#pricing' },
+          
         ],
       },
     ],
@@ -92,18 +100,28 @@ const subMenuItems: SubMenuItem[] = [
     parent: 'products',
     categories: [
       {
-        name: 'Enterprise AI',
+        name: 'Le Chat',
         items: [
-          { name: 'Custom Models', href: '#custom-models' },
-          { name: 'Integration', href: '#integration' },
-          { name: 'Consulting', href: '#consulting' },
+          { name: 'For everybody', href: '' },
+          { name: 'For enterprise', href: '' },
+          { name: 'Pricing', href: '' },
+          { name: 'Login', href: '' },
         ],
       },
       {
-        name: 'Research',
+        name: 'La Plateforme',
         items: [
-          { name: 'Academic Tools', href: '#academic' },
-          { name: 'Open Source', href: '#open-source' },
+          { name: 'API', href: '' },
+          { name: 'Pricing', href: '' },
+          { name: 'Docs', href: '' },
+          { name: 'Login', href: '' },
+        ],
+      },
+      {
+        name: 'Stories',
+        items: [
+          { name: 'Uses Cases', href: '' },
+         
         ],
       },
     ],
@@ -151,16 +169,16 @@ export default function Header() {
           <header className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
               <h2 className="text-xl font-semibold capitalize">{activeMenu}</h2>
-              <a href="#" className="flex gap-2 items-center text-orange-600 hover:underline">
+              <a href="#" className="flex gap-2 items-center text-neutral-600 hover:underline">
                 All features <ArrowRight size={16} />
               </a>
             </div>
           </header>
 
-          <div className={`grid grid-cols-3 gap-8`}>
+          <div className={`grid grid-cols-3 gap-8 divide-x`}>
             {submenuData.categories.map((category, index) => (
-              <div key={index} className="space-y-4">
-                <h3 className="font-semibold text-lg border-b pb-2">{category.name}</h3>
+              <div key={index} className="space-y-4 pl-8 first:pl-0">
+                <h3 className="font-semibold text-lg pb-2">{category.name}</h3>
                 <ul className="space-y-2">
                   {category.items.map((item, itemIndex) => (
                     <li key={itemIndex}>
@@ -169,7 +187,7 @@ export default function Header() {
                         className="text-neutral-700 hover:text-orange-500 transition-colors"
                       >
                         {item.name}
-                        {item.tag && <span className="text-xs ml-2 bg-orange-500 text-white px-2 py-1 ">{item.tag}</span>}
+                        {item.tag && <span className="text-xs ml-2 bg-orange-600 text-white p-1 ">{item.tag}</span>}
                       </a>
                     </li>
                   ))}

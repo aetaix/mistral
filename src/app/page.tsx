@@ -5,7 +5,6 @@ import { Carousel } from "@/components/features/carousel";
 import GameOfLife from "@/components/features/game-of-life";
 import PostList from "@/components/features/post-list";
 import Prefooter from "@/components/features/prefooter";
-import RollingTitle from "@/components/features/rolling-title";
 import Tabs from "@/components/features/tabs";
 import { Advantages } from "@/components/layouts/home/advantages";
 import { Models } from "@/components/layouts/home/models";
@@ -36,11 +35,10 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container py-24">
+          <div className="container px-0 py-24">
             <div className="flex items-center justify-center">
-              <RollingTitle />
+              <h2 className="text-3xl mb-8 font-semibold">Cutting edge technology for developers</h2>
             </div>
-
             <Advantages />
           </div>
         </section>
@@ -74,7 +72,6 @@ export default function Home() {
             <PostList />
           </div>
         </div>
-
       </section>
 
       <Prefooter />

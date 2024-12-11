@@ -17,14 +17,14 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-md shadow-md">
+    <div className="w-full  text-white">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-gray-200">
+        <div key={index} className="border-b border-neutral-800 mb-4">
           <button
             onClick={() => toggleItem(index)}
-            className="flex justify-between items-center w-full px-4 py-2 text-left text-gray-700 font-medium hover:bg-gray-100 focus:outline-none"
+            className="flex justify-between items-center w-full py-2 text-left font-medium focus:outline-none"
           >
-            <span>{item.title}</span>
+            <span className="text-2xl">{item.title}</span>
             <svg
               className={`w-5 h-5 transform transition-transform ${
                 activeIndex === index ? "rotate-180" : ""
@@ -43,7 +43,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             </svg>
           </button>
           {activeIndex === index && (
-            <div className="px-4 py-2 text-gray-600">{item.content}</div>
+            <div className="py-4 text-neutral-200">{item.content}</div>
           )}
         </div>
       ))}
