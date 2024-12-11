@@ -26,43 +26,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10">
-        <Carousel />
-      </section>
+      <div className="bg-models">
+        <section className="py-10">
+          <Carousel />
+        </section>
 
-      <section className="py-10">
-        <Models />
-      </section>
+        <section className="py-10 ">
+          <Models />
+        </section>
 
-      <section>
-        <div className="container py-24">
-          <div className="flex items-center justify-center">
-            <RollingTitle />
+        <section>
+          <div className="container py-24">
+            <div className="flex items-center justify-center">
+              <RollingTitle />
+            </div>
+
+            <Advantages />
           </div>
-
-          <Advantages />
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="bg-black text-white py-24">
-        <div className="container ">
+        <div className="container px-0">
           <h2 className="text-xl mb-4 text-orange-500">La Plateforme</h2>
           <p className="text-4xl font-semibold mb-8">Build at the speed of AI</p>
           <Plateform />
           <div className="flex justify-center mt-8">
-            <Button href="/plateform" variant="outline">Discover La Plateforme</Button>
+            <Button href="/plateform" >Discover La Plateforme</Button>
           </div>
         </div>
       </section>
 
       <section className="py-24">
-        <div className="container">
+        <div className="container px-0">
           <Tabs />
         </div>
       </section>
 
       <section className="pb-24">
-        <div className="container grid grid-cols-2">
+        <div className="container px-0 grid grid-cols-2">
           <div>
             <h2 className="text-4xl font-semibold mb-2">Latest insights</h2>
             <p className="mb-8">Here from us, our research and life at Mistral AI</p>

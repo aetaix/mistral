@@ -57,7 +57,7 @@ const modelsOpen = [
 
 export function Models() {
     return (
-        <div className="container px-0 grid grid-cols-3 divide-x divide-neutral-200 border border-neutral-200 shadow">
+        <div className="container px-0 grid grid-cols-3 divide-x divide-neutral-200 border border-neutral-200 bg-white shadow">
             <div className="p-8 flex flex-col justify-between">
                 <div>
                     <svg width="32" height="33" className="mb-8" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">

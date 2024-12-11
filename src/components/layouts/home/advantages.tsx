@@ -29,9 +29,9 @@ export function Advantages() {
     )
 }
 
-function Advantage({ title, description, icon }: { title: string, description: string, icon: React.ReactNode | null}) {
+function Advantage({ title, description, icon }: { title: string, description: string, icon: string }) {
     return (
-        <article className="space-y-4 border p-8 shadow">
+        <article className="space-y-4 border p-8 shadow bg-white">
             <Image src={icon} width={44} height={44} alt={title} />
             <div>
                 <h3 className="text-xl font-semibold">{title}</h3>
